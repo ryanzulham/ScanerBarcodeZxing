@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Scaner Barcode Zxing</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_scan">Scan Barcode</string>
+</resources>
