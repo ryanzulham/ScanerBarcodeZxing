@@ -6,10 +6,15 @@
     >
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnscan"
         android:onClick="scanBarcode"
         android:text="@string/button_scan"/>
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnview"
+        android:onClick="viewcode"
+        android:text="@string/button_view"/>
 </LinearLayout>

@@ -2,6 +2,7 @@ package com.rzr.zulham.scanerbarcodezxing;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -42,5 +43,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         else
             return true;
         }
+
+    public Cursor getAllCode(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res = db.rawQuery("select * from "+TABLE_NAME,null);
+        return res;
+    }
     }
 
